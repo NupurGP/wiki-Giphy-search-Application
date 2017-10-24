@@ -1,0 +1,11 @@
+.wiki-container {
+  border: 1px solid #000000;
+  display: inline-block;
+  width: 500px;
+}
+
+.giphy-container {
+  border: 1px solid #000000;
+  display: inline-block;
+  width: 500px;
+}

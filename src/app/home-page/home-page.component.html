@@ -1,0 +1,16 @@
+<a [routerLink]="['/search-history']">Search History</a>
+<h2>Search</h2>
+<div>
+  <input type="text" [(ngModel)]="searchText" placeholder="Type text here" />
+  <button type="button" (click)="searchWiki()">Search Wiki</button>
+  <button type="button" (click)="searchGiphy()">Search Giphy</button>
+</div>
+<br />
+<table>
+  <tr *ngFor="let searchResultsData of wikiSearchAnswer">{{ searchResultsData }}</tr>
+</table>
+<table>
+  <tr *ngFor="let searchResultsData of giphySearchAnswer">
+    <img src="{{ searchResultsData.images['fixed_height_downsampled'].url }}" />
+  </tr>
+</table>
